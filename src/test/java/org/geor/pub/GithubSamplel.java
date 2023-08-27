@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class GithubSamplel {
@@ -36,6 +37,9 @@ public class GithubSamplel {
 		 driver.findElement(By.xpath("//ul[@id='top-menu']//a[text()='Contact Us']")).click();
 		 Thread.sleep(10);
 		 driver.findElement(By.xpath("//img[@src='/wp-content/uploads/2020/07/fooddepot-logo.png']")).click();
+	     driver.findElement(By.xpath("//*[text()='Welcome to Food Depot!']")).click();
+	     driver.findElement(By.xpath("//*[text()='Watch your savings grow!']")).click();
+		 
 		 
 			 
 		 
