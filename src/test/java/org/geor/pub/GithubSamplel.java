@@ -24,6 +24,9 @@ public class GithubSamplel {
 		 driver.findElement(By.xpath("//img[@src='/wp-content/uploads/2020/07/fooddepot-logo.png']")).click();
 		 String ExpectedTitle=driver.getTitle();
 		 Assert.assertEquals(Title, ExpectedTitle);
+		 driver.findElement(By.xpath("//*[@id='top-menu']//*[text()='Locations']")).click();
+		 driver.findElement(By.xpath("//img[@src='/wp-content/uploads/2020/07/fooddepot-logo.png']")).click();
+		 
 		 
 			 
 		 
