@@ -30,8 +30,12 @@ public class GithubSamplel {
 		 driver.findElement(By.xpath("//*[@id='top-menu']//*[text()='About Us']")).click();
 		 Thread.sleep(10);
 		 driver.findElement(By.xpath("//img[@src='/wp-content/uploads/2020/07/fooddepot-logo.png']")).click();
-		 
-		 
+		 driver.findElement(By.xpath("//ul[@id='top-menu']//a[text()='Careers']")).click();
+		 Thread.sleep(10);
+		 driver.findElement(By.xpath("//img[@src='/wp-content/uploads/2020/07/fooddepot-logo.png']")).click();
+		 driver.findElement(By.xpath("//ul[@id='top-menu']//a[text()='Contact Us']")).click();
+		 Thread.sleep(10);
+		 driver.findElement(By.xpath("//img[@src='/wp-content/uploads/2020/07/fooddepot-logo.png']")).click();
 		 
 			 
 		 
