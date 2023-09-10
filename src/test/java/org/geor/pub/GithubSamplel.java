@@ -10,7 +10,7 @@ import org.testng.Assert;
 
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-
+import org.openqa.selenium.Alert;
 public class GithubSamplel {
 
 	public static WebDriver driver;
@@ -21,8 +21,8 @@ public class GithubSamplel {
 		 String Title=driver.getTitle();
 		 driver.manage().window().maximize();
 		 driver.findElement(By.xpath("//ul[@id='top-menu']//a[text()='Weekly Ad']")).click();
-		 Thread.sleep(10);
-		 driver.findElement(By.xpath("//img[@src='/wp-content/uploads/2020/07/fooddepot-logo.png']")).click();
+		// driver.findElement(By.xpath("//img[@src='/wp-content/uploads/2020/07/fooddepot-logo.png']")).click();
+		 driver.findElement(By.xpath("//img[@id='logo']")).click();
 		 String ExpectedTitle=driver.getTitle();
 		 Assert.assertEquals(Title, ExpectedTitle);
 		 driver.findElement(By.xpath("//*[@id='top-menu']//*[text()='Locations']")).click();
@@ -38,7 +38,15 @@ public class GithubSamplel {
 		 Thread.sleep(10);
 		 driver.findElement(By.xpath("//img[@src='/wp-content/uploads/2020/07/fooddepot-logo.png']")).click();
 	     driver.findElement(By.xpath("//*[text()='Welcome to Food Depot!']")).click();
-	     driver.findElement(By.xpath("//*[text()='Watch your savings grow!']")).click();
+	     ////////
+	     
+	     driver.findElement(By.xpath("//ul[@id='top-menu']//a[text()='Coupons']")).click();
+	     Alert alert=driver.switchTo().alert();
+	     alert.dismiss();
+	     
+	     driver.findElement(By.xpath("//img[@src='/wp-content/uploads/2020/07/fooddepot-logo.png']")).click();
+	    
+	     
 		 
 		 
 			 
